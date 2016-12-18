@@ -1,4 +1,8 @@
-<script src="http://127.0.0.1:3000/library/socket_service"></script>
+<script src="http://127.0.0.1:3000/socket.io/socket.io.js"></script>
 <script type="text/javascript">
-    
+    const socket = io.connect('http://127.0.0.1:3000');
+    socket.emit('register_action', { action : 'purchase', data : { id : 1, message : 'purchase' } });
+    socket.on('purchase', data => {
+        console.log(data);
+    });
 </script>
