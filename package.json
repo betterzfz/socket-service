@@ -1,5 +1,5 @@
 {
-  "name": "socket service",
+  "name": "serve-socket",
   "version": "1.0.0",
   "description": "a socket service",
   "main": "index.js",
@@ -25,5 +25,6 @@
     "express": "^4.14.0",
     "socket-service": "^1.0.1",
     "socket.io": "^1.7.2"
-  }
+  },
+  "private": true
 }
