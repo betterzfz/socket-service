@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>socket-service-demo</title>
+    </head>
+    <button id="send">发送</button>
+    <script src="./public/js/jquery.min.js"></script>
+    <script src="http://127.0.0.1:3000/socket-service" text="text/javascript"></script>
+    <script type="text/javascript">
+        $(() => {
+            console.log(socket_service);
+            $('#send').click(() => {
+                socket_service.register('purchase', { id : 1, message : 'hello'});
+            });
+            socket_service.apply('purchase', data => {
+                console.log(data);
+            });
+        });
+    </script>
+</html>

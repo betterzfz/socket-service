@@ -1,5 +1,5 @@
 {
-  "name": "socket-service",
+  "name": "socket service",
   "version": "1.0.0",
   "description": "a socket service",
   "main": "index.js",
@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/betterzfz/socket-service#readme",
   "dependencies": {
+    "circular-json": "^0.3.1",
     "config": "^1.24.0",
     "express": "^4.14.0",
+    "socket-service": "^1.0.1",
     "socket.io": "^1.7.2"
   }
 }
