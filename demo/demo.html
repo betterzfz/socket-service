@@ -10,6 +10,7 @@
     <script type="text/javascript">
         $(() => {
             console.log(socket_service);
+            console.log(socket_service.socket);
             $('#send').click(() => {
                 socket_service.register('purchase', { id : 1, message : 'hello'});
             });
