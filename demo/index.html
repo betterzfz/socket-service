@@ -10,7 +10,7 @@
     <script src="http://127.0.0.1:3000/socket-service.js"></script>
     <script type="text/javascript">
         $(() => {
-            socket_service = new SocketService('127.0.0.1', '3000');
+            const socket_service = new SocketService('127.0.0.1', '3000');
             $('#send').click(() => {
                 socket_service.register('purchase', { id : 1, message : 'hello'});
             });
